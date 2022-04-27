@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+@media all and(max-width:980px){
+}
+h1 {text-align: center;}
+p {text-align: center;}
+p {font-size: 32px}
+footer {margin-top: 200px;}
+</style>
+<body>
+
+
+<h1>ANIMALI MORTI PER COLPA DELL'UOMO DA QUANDO SEI ENTRATO NELLA PAGINA</h1>
+   <p id="cont">0</p>
+<br>
+ 
+
+
+<script>
+var c=0;
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 1000);
+  function frame() {
+
+
+document.getElementById("cont").innerHTML=c;
+  c=c+4756;
+  document.getElementById("cont"); 
+    
+  }
+}
+window.onload=move();
+</script>
+<p>Abbiamo scritto questo articolo per sensabilizzare le persone sull'uccisione degli animali, di fatto vengono uccisi circa 150 miliardi di animali l'anno (4750, circa, ogni secondo). Seondo il nostro modesto parere di studenti, il dato e' eccessivo, e dunque e' necessario ridurlo contrastando la bracconeria e limitare lo sfruttamento degli animali negli allevamenti intensivi.</p>
+<footer> 
+    <p>Prod by Flavio Biasini e Stefano Cabulliese</p>
+    <p>Fonte IlGiornale</p>
+</footer>
+</body>
+
+</html>

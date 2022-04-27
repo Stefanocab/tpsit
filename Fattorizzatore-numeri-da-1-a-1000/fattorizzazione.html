@@ -1,0 +1,58 @@
+<head>Fattorizzazione num 1 a 1000</head>
+
+<body>
+
+    <div id="visualizza"></div>
+
+    <button onclick="myName();">Inserisci il numero</button>   
+
+<script>
+var cont =0 ;
+   function myName() {
+
+   var messaggio;
+   for(i=0;i<1001;i++){
+    
+    var numero = i;
+
+   let out= " " ;
+
+   out=fattorizzatore(numero);
+
+     document.write("<span>"+out+" "+"</span>"+"<span style = 'color : red ;' >" + cont + "</span>"  +  " " );
+
+
+   
+   }
+  
+}
+
+ 
+function fattorizzatore(n)
+
+   {  var array=[] ;
+
+      let fineciclo = n/2 ;
+      
+      for ( let fattore = 1 ; fattore <= fineciclo ; fattore++ )
+      
+      { 
+    
+             if ( n%fattore ==0 )
+                 {  array = array + fattore + " ";
+                 
+                 } 
+                 
+                 cont = array.length;
+                 
+        }
+        
+    return  array ;
+
+   }
+
+
+
+</script>
+
+</body>
