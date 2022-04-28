@@ -1,0 +1,39 @@
+<head>Numeri primi da 1 a 100</head>
+
+<body>
+<button onclick="isPrime(100)">Clicca</button>
+<script>
+
+function isPrime(n) {
+                // restituisce true se il numero n è primo cioè ha
+                //come fattori solo 1 e n
+                // restituisce false se il numero n non è primo
+                //cioè ha un numero di fattori > 2
+		var cont = 0;
+		var bOut = false;
+                  for(fattore=2;fattore<=100;fattore++)
+                        {
+			for(var fat2=2;fat2<fattore;fat2++) {
+                           if (fattore%fat2==0)
+                                    {
+					break;
+				
+                                    }
+                                else {
+					cont++;
+					document.body.append(fattore + " ");
+                                }
+                        }
+            }
+            document.body.innerHTML += "<br>";
+          document.body.append(cont);
+
+
+        }
+</script>
+
+
+
+</body>
+
+
